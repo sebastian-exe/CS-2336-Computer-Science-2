@@ -29,7 +29,7 @@ public class Board {
             boxes[i] = b;
         }
     }
-
+    //prints out the board info
     public void print() {
         for(int i = 0; i < boxes.length; i++) {
             boxes[i].print();
@@ -39,7 +39,7 @@ public class Board {
             }
         }
     }
-
+    //prints out the print test test
     public void printTest() {
         System.out.println("Printing the board info...");
         for(int i = 0; i < boxes.length; i++) {
