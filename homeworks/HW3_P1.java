@@ -1,3 +1,29 @@
+/*
+HW3_P1 - Student list using array
+Given a Student class, create a class with following characteristics:
+The class name should be ClassRoom.
+Private variable students array to maintain the list of Student objects.
+Function addStudent with input parameter name (string) and rollNo(int) adds a new student in “students” list. 
+Method getAllStudents should return all the students in ClassRoom.
+ 
+Input
+    Jack
+    1
+    Jones
+    2
+    Marry
+    3
+ 
+    where,
+First & Second line represent a student’s name and roll number. And so on.
+ 
+Output
+    1 - Jack 
+    2 - Jones
+    3 - Marry
+ 
+*/
+
 import java.util.*;
 /* Write your Analysis (What is the problem):
 The probelm is to fill out the students array with the 
