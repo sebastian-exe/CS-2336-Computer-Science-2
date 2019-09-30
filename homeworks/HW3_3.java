@@ -5,6 +5,18 @@ import java.io.*;
 // Do NOT change the visibility to public.
 // DO not change anything in the Person class Please.
 
+/*For the Person class, create two subclasses named Student and Employee.
+Make Faculty and Staff subclasses of Employee.
+A person has a name.
+A student has a class status varibale of type int with possible 4 status options (1 = FRESHMAN, 2 = SOPHOMORE, 3 = JUNIOR, or 4 = SENIOR).
+An employee has a salary (int)
+A faculty member has a rank (int).
+A staff member has a title (string).
+All classes need to have parameterized/custome constructors to set all the variables.
+ */
+Override the toString method in each class to display the class name and the instance name attribute. (same as Person class)
+The test program will create an instance of one of these classes and invokes their toString() methods.
+
 class Person{
 	private String name;
     //private int status, do i have to put the status here too?
