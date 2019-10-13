@@ -1,0 +1,58 @@
+import java.util.*;
+/* Write your Analysis (What is the problem):
+The probelm is to practice implementing the 
+cloneable interface into the student class.
+*/
+
+/* Write your Design (How to solve the problem):
+Based on the instructions, the plan is to crate a student
+interface that implements the cloneable interface. From there
+I plan to add the certain methods and private data types
+needed to perform the tasks with the information passed in
+from the driver main.
+*/
+	
+
+
+	//write your code here
+     class Student implements Cloneable{
+    
+    //initalize the variables 
+    private String RollNo;
+    private String Name;
+        
+    public Student(String roll, String name){
+       this.RollNo = roll;
+       this.Name = name;
+        }
+    
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+         
+         
+    public String getRollNo(){
+    return this.RollNo;
+        }  
+        
+    public String getName(){
+    return this.Name;
+        }  
+    }
+
+class DriverMain
+{
+    public static void main (String[] args){    
+        try{  
+            Scanner scanner = new Scanner(System.in);
+            String roll = scanner.nextLine();
+            String name = scanner.nextLine();
+            Student s1=new Student(roll,name);  
+            Student s2=(Student)s1.clone();  
+            System.out.println(s2.getRollNo());
+            System.out.print(s2.getName());
+
+        }catch(CloneNotSupportedException c){}  
+
+    }  
+}
